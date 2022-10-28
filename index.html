@@ -217,10 +217,23 @@
   <script>
     
 
-    var ul = document.querySelector('ul');
-    for (var i = ul.children.length; i >= 0; i--) {
+    let ul = document.querySelector('ul');
+    for (let i = ul.children.length; i >= 0; i--) {
         ul.appendChild(ul.children[Math.random() * i | 0]);
     }
+	  
+	function hideAll(){
+		let mylist = document.getElementsByClass('game');
+		mylist.push(document.getElementsByClass('book'));
+		mylist.push(document.getElementsByClass('food'));
+		mylist.push(document.getElementsByClass('movie'));
+		mylist.push(document.getElementsByClass('tv'));
+		mylist.push(document.getElementsByClass('music'));
+		for(let each of mylist){
+			each.style.display="none";
+		}
+	}
+	 
   </script>
 </body>
 
