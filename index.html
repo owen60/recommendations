@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Student Recommendations</title>
-  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <link href="https://bradleycodeu.github.io/styles.css" rel="stylesheet" type="text/css"/> 
   <style>
 	  body{
 			background-color:#102042;
@@ -42,18 +42,18 @@
     }
 		li:nth-child(even) img{
 			float: right;
-			margin-left: 10px;
+			margin-left: 30px;
 		}
 		li:nth-child(odd) img{
 			float: left;
-			margin-right: 10px;
+			margin-right: 30px;
 		}
   </style>
 </head>
 
 <body>
 
-  <script src="script.js"></script>
+  
   <p>
 
   <h2>BradleyCodeU Recommendations</h2>
@@ -80,7 +80,7 @@
         Conlan recommends Just Shapes and Beats for Switch.
     </li>
 
-    <li class="game">
+    <li class="movie">
 	      <img alt="Suicide Squad Picture" src="https://play-lh.googleusercontent.com/2DQIMwhOYvAgUrupYL4kOkxVNvKrKb1XpT-xWqKRgtXsy45RP0srT-gRSNAlyscDz1NI5k6leeNEhev0-AiU">
         Will recommended the new Suicide Squad (2021) movie.
     </li>
@@ -215,6 +215,7 @@
 	  <li class="game"> Safwan recommends the game Microsoft Flight Simulator </li>
   </ul>
   </p>
+  <script src="https://bradleycodeu.github.io/script.js"></script>
   <script>
     
 
@@ -224,19 +225,14 @@
     }
 	  
 	function hideAll(){
-		let mylist = document.getElementsByClass('game');
-		mylist.push(document.getElementsByClass('book'));
-		mylist.push(document.getElementsByClass('food'));
-		mylist.push(document.getElementsByClass('movie'));
-		mylist.push(document.getElementsByClass('tv'));
-		mylist.push(document.getElementsByClass('music'));
+    let mylist = document.getElementsByTagName('li');
 		for(let each of mylist){
 			each.style.display="none";
 		}
 	}
 	function showGames(){
 		hideAll();
-		let mylist = document.getElementsByClass('game');
+		let mylist = document.getElementsByClassName('game');
 		for(let each of mylist){
 			each.style.display="block";
 		}
