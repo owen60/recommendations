@@ -10,7 +10,7 @@
   <link href="styles.css" rel="stylesheet" type="text/css"/>
   <style>
 	  body{
-		  background-color:#102042;
+			background-color:#102042;
 			padding:10px;
 		  font-size:1.5rem;
 		  color:#ffffff;
@@ -35,19 +35,19 @@
       background: rgba(0,255,0,0.1);
     }
     li img {
-		max-width:100px;
-		max-height:100px;
+			max-width:100px;
+			max-height:100px;
 	    border:solid #8c95bd 4px;
-		border-radius: 3px;
+			border-radius: 3px;
     }
-	li:nth-child(even) img{
-		float: right;
-		margin-left: 10px;
-	}
-	li:nth-child(odd) img{
-		float: left;
-		margin-right: 10px;
-	}
+		li:nth-child(even) img{
+			float: right;
+			margin-left: 10px;
+		}
+		li:nth-child(odd) img{
+			float: left;
+			margin-right: 10px;
+		}
   </style>
 </head>
 
@@ -71,7 +71,7 @@
     </li>
 
     <li class="game">
-	<img alt="coffee talk picture" src="https://cdn-products.eneba.com/resized-products/kUe_DT6EZ5f0wNcItsF9girVEWfNJuez5ieu06oiXpo_350x200_2x-0.jpg">
+				<img alt="coffee talk picture" src="https://cdn-products.eneba.com/resized-products/kUe_DT6EZ5f0wNcItsF9girVEWfNJuez5ieu06oiXpo_350x200_2x-0.jpg">
         Tre recommends Coffee Talk for Switch.
     </li>
 
@@ -181,8 +181,9 @@
 
 	  <li class="game">Naseem recommends the game American Truck Simulator</li>
 
-	  <li class="food">AJ recommends the food known as chicken
+	  <li class="food">
 	  	<img alt="Chicken" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/1280px-Fried-Chicken-Set.jpg">
+			AJ recommends the food known as chicken
 	  </li>
 
 	  <li class="food">Moufid recommends the restaurant Wingstop especially the lemon-pepper chicken wings</li>
@@ -202,7 +203,7 @@
 	  <li class="game">
 		  <img alt="ddlc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwyoMgReinRSSGlrol9US-9N79Oz_Qc2b-f8QQE3_s1KASCBgCkOxsawD4ztQZZy66nQ:https://cdn.akamai.steamstatic.com/steam/apps/1388880/capsule_616x353.jpg%3Ft%3D1634143775&usqp=CAU">
 		  Alex recommends Doki Doki Literature Club Plus!
-          </li>
+    </li>
 	  <li class="game"> Kohen recommends Minecraft: Education Edition </li>
 	  
 	  <li class="movie">Tre recommends the movie Bullet Train (2022)</li>
@@ -231,6 +232,13 @@
 		mylist.push(document.getElementsByClass('music'));
 		for(let each of mylist){
 			each.style.display="none";
+		}
+	}
+	function showGames(){
+		hideAll();
+		let mylist = document.getElementsByClass('game');
+		for(let each of mylist){
+			each.style.display="block";
 		}
 	}
 	 
