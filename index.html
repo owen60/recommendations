@@ -219,12 +219,13 @@
 	    </div>
         
         <script>
-            function shuffleLists(){
+            function shuffleList(){
 		    let ul = document.getElementById("list-grid");
 		    for (let i = ul.children.length; i >= 0; i--) {
 			ul.appendChild(ul.children[Math.random() * i | 0]);
 		    }
 	    }
+	    shuffleList();
 
             function hideAll() {
                 let mylist = document.getElementById("list-grid").children;
