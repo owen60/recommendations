@@ -205,7 +205,7 @@
             }
 
             function hideAll() {
-                let mylist = document.getElementsByTagName('li');
+                let mylist = document.getElementById("list-grid").children;
                 for (let each of mylist) {
                     each.style.display = "none";
                 }
