@@ -9,7 +9,9 @@ public class Recommendation
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
   {
-      //  STEP 2 of 4: Set a default value for your instance variable
+      //  STEP 2 of 4: Set a default value for your instance variable.
+      //  NOTE: If yr instance var is a String, do NOT set it to null or "". 
+      //  NOTE: If yr instance var is an Object, do NOT set it null. Construct that Object.
       description = "This is a defult description";
   }
 
