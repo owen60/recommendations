@@ -25,12 +25,13 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+  
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
   public void setDesc(String _description) {
     description = _description;
   }
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
-}
+  }
 
 }
