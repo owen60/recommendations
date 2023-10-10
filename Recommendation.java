@@ -4,7 +4,7 @@ public class Recommendation
   /* Instance variable declarations go here, before constructors */
   // STEP 1 of 4: Add one private instance variable
   private String description;
-
+  private String imgLink;
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -13,6 +13,7 @@ public class Recommendation
       //  NOTE: If yr instance var is a String, do NOT set it to null or "". 
       //  NOTE: If yr instance var is an Object, do NOT set it null. Construct that Object.
       description = "This is a defult description";
+      imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
   }
 
   /* Method definitions go here, after constructors */
@@ -21,10 +22,15 @@ public class Recommendation
     return description;
   }
 
+  public String getImgLink(){
+    return imgLink;
+  }
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
   public void setDesc(String _description) {
     description = _description;
   }
-  
+  public void setImgLink(String _imgLink){
+    imgLink = _imgLink;
+}
 
 }
