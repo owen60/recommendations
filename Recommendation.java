@@ -9,6 +9,8 @@ public class Recommendation
 
   private String imgLink;
 
+  private int dislikes;
+
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -21,6 +23,8 @@ public class Recommendation
       likes = 0;
 
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
+
+      dislikes = 0;
 
   }
 
@@ -38,6 +42,10 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+
+  public int getDislikes(){
+    return dislies;
+  }
   
 
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
@@ -51,6 +59,10 @@ public class Recommendation
 
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
+  }
+
+  public void changeDislikes(int newDislikes) {
+    dislikes += newDislikes
   }
 
 
