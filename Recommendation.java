@@ -4,7 +4,7 @@ public class Recommendation
   /* Instance variable declarations go here, before constructors */
   // STEP 1 of 4: Add one private instance variable
   private String description;
-
+  private String author;
   private int likes;
 
   private String imgLink;
@@ -23,6 +23,12 @@ public class Recommendation
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
 
   }
+  
+  public Author()
+  {
+    author = "John Doe";
+
+  } 
 
   /* Method definitions go here, after constructors */
   //  STEP 3 of 4: Add one accessor method (getter) for your instance variable
@@ -39,7 +45,9 @@ public class Recommendation
     return imgLink;
   }
   
-
+  public String getAuthor(){
+    return author;
+  }
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
   public void setDesc(String _description) {
     description = _description;
@@ -48,7 +56,9 @@ public class Recommendation
   public void changeLikes(int newLikes) {
     likes += newLikes;
   }
-
+  public void setAuthor(String _author){
+    author = _author;
+  }
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
   }
