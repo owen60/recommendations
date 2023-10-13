@@ -9,7 +9,8 @@ public class Recommendation
 
   private String imgLink;
 
-
+  private numOfRecommendations = 0;
+  
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
   {
@@ -38,7 +39,10 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
-  
+
+  public String getNumOfRecommendations(){
+    return nufOfRecommendations
+  }
 
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
   public void setDesc(String _description) {
@@ -52,6 +56,8 @@ public class Recommendation
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
   }
-
+  public void setNumOfRecommendations(_numOfRecommendations){
+    numOfRecommendations = _numOfRecommendations
+  }
 
 }
