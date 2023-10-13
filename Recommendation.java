@@ -44,7 +44,7 @@ public class Recommendation
   }
 
   public int getDislikes(){
-    return dislies;
+    return dislikes;
   }
   
 
@@ -61,8 +61,9 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
-  public void changeDislikes(int newDislikes) {
-    dislikes += newDislikes
+  public void changeDislikes(int addDislikes) {
+    addDislikes += 1
+    dislikes += addDislikes
   }
 
 
