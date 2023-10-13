@@ -9,6 +9,11 @@ public class Recommendation
 
   private String imgLink;
 
+  private int month;
+  private int day;
+  private int year;
+  private String date;
+
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -38,7 +43,17 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
-  
+
+  public void setDate(int _month, int _day, int _year){
+    month = _month;
+    day = _day;
+    year = _year;
+    date = month + "/" + day + "/" + year;
+  }
+
+  public String getDate(){
+    return date;
+  }
 
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
   public void setDesc(String _description) {
