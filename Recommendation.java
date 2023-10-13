@@ -19,17 +19,12 @@ public class Recommendation
       description = "This is a defult description";
 
       likes = 0;
-
+      author = "John Doe";
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
 
   }
   
-  public Author()
-  {
-    author = "John Doe";
-
-  } 
-
+  
   /* Method definitions go here, after constructors */
   //  STEP 3 of 4: Add one accessor method (getter) for your instance variable
   public String getDesc() {
