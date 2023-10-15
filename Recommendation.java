@@ -9,6 +9,8 @@ public class Recommendation
 
   private String imgLink;
 
+  private boolean hasImage;
+
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -21,6 +23,8 @@ public class Recommendation
       likes = 0;
       author = "John Doe";
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
+
+      hasImage = false;
 
   }
   
@@ -39,6 +43,10 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+
+  public boolean getHasImage(){
+    return hasImage;
+  }
   
   public String getAuthor(){
     return author;
@@ -56,6 +64,10 @@ public class Recommendation
   }
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
+  }
+
+  public void setHasImage(boolean _hasImage){
+    hasImage = _hasImage;
   }
 
 
