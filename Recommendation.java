@@ -9,9 +9,15 @@ public class Recommendation
 
   private String imgLink;
 
+  private int month;
+  private int day;
+  private int year;
+  private String date;
+
   private int dislikes;
 
   private boolean hasImage;
+
 
 
 
@@ -23,10 +29,17 @@ public class Recommendation
       //  NOTE: If yr instance var is an Object, do NOT set it null. Construct that Object.
       description = "This is a defult description";
       likes = 0;
+
+      month = 0;
+      day = 0;
+      year = 0;
+      date = "0/0/0";
+
       author = "John Doe";
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
       dislikes = 0;
       hasImage = false;
+
 
   }
   
@@ -43,6 +56,18 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+
+  public void setDate(int _month, int _day, int _year){
+    month = _month;
+    day = _day;
+    year = _year;
+    date = month + "/" + day + "/" + year;
+  }
+
+  public String getDate(){
+    return date;
+  }
+
 
   public int getDislikes(){
     return dislikes;
