@@ -61,9 +61,8 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
-  public void changeDislikes(int addDislikes) {
-    addDislikes += 1
-    dislikes += addDislikes
+  public void addDislike() {
+    dislikes += 1;
   }
 
 
