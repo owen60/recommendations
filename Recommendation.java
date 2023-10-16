@@ -54,7 +54,7 @@ public class Recommendation
   public void setImgLink(String _imgLink){
     imgLink = _imgLink;
   }
-  public void setNumOfRecommendations(_numOfRecommendations){
+  public void setNumOfRecommendations(int _numOfRecommendations){
     numOfRecommendations = _numOfRecommendations
   }
 
