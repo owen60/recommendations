@@ -25,7 +25,12 @@ public class Recommendation
 
       likes = 0;
 
-      imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
+      month = 0;
+      day = 0;
+      year = 0;
+      date = "0/0/0";
+
+      imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg";
 
   }
 
