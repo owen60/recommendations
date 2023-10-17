@@ -9,7 +9,7 @@ public class Recommendation
 
   private String imgLink;
 
-  private int numOfRecommendations;
+  private int numOfRecommendations = 0;
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
   {
