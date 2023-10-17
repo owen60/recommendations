@@ -9,7 +9,7 @@ public class Recommendation
 
   private String imgLink;
 
-  private int numOfRecommendations = 0;
+  private int numOfRecommendations;
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
   {
@@ -22,6 +22,7 @@ public class Recommendation
 
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
 
+      numOfArms = 0
   }
 
   /* Method definitions go here, after constructors */
